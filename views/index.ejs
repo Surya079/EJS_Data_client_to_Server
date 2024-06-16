@@ -6,17 +6,17 @@
     <title>data_Client_to_Server</title>
 </head>
 <body>
-    <h1>There is a 
-        <% if (locals.Len) { %>
-            <%= Len %>
-        <% } %>
-        characters in your name. </h1>
+    
+    <h1>Write your name here ⬇️</h1>    
     <form action="/find" method="post">
+    
         <label for="firstname">Firstname :</label> <br>
         <input type="text" name="firstname"> <br>
-        <label for="secondname">Secondname :</label> <br>
-        <input type="text" name="Secondname"> <br>
+        <label for="secondname">Secondname :</label> <br> 
+        <input type="text" name="secondname"> <br> 
         <input type="submit" value="OK">
+    
     </form>
+
 </body>
 </html>
