@@ -16,8 +16,9 @@ app.get('/', (req, res)=>{
 
 app.post("/find",(req, res)=>{
     let name = req.body["firstname"] + req.body["secondname"];
-    let len = name.length;
-    res.render("index.ejs",len)
+    let Namelen = name.length;
+
+    res.render("index.ejs",{NumofLengtn : Namelen});
     
 });
 
