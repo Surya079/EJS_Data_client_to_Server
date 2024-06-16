@@ -6,8 +6,15 @@
     <title>data_Client_to_Server</title>
 </head>
 <body>
-    
-    <h1 class="head">Write your name here ⬇️</h1>    
+   
+    <h1>
+        <% if (locals.NumofLengtn) { %>
+            There is <%= NumofLengtn %> characters in your name!
+        <% } else { %>
+            <h1>Write your name here ⬇️</h1>
+        <% } %>
+    </h1>
+
     <form action="/find" method="post">
     
         <label for="firstname">Firstname :</label> <br>
