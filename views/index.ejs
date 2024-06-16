@@ -6,7 +6,11 @@
     <title>data_Client_to_Server</title>
 </head>
 <body>
-    <h1>There is a <%= Lenght %> characters in your name. </h1>
+    <h1>There is a 
+        <% if (locals.Len) { %>
+            <%= Len %>
+        <% } %>
+        characters in your name. </h1>
     <form action="/find" method="post">
         <label for="firstname">Firstname :</label> <br>
         <input type="text" name="firstname"> <br>
